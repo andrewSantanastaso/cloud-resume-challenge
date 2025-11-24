@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Andrew Santanastaso — Software Engineer | Systems and Operations</title>
+  <style>
+    /* Simple, framework-free styling */
+    :root {
+      --accent: #0a66c2;
+      --muted: #6b6b6b;
+      --max-width: 900px;
+      --pad: 20px;
+      --section-gap: 22px;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color: #111;
+      line-height: 1.45;
+    }
+    html,body { margin: 0; padding: 0; background: #fff; }
+    .container {
+      max-width: var(--max-width);
+      margin: 28px auto;
+      padding: var(--pad);
+    }
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      border-bottom: 1px solid #e6e6e6;
+      padding-bottom: 12px;
+    }
+    .name {
+      font-size: 28px;
+      font-weight: 700;
+      margin: 0;
+    }
+    .title {
+      margin: 6px 0 0 0;
+      color: var(--muted);
+      font-weight: 600;
+    }
+    .contact {
+      text-align: right;
+      font-size: 14px;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+    .contact a { color: var(--accent); text-decoration: none; }
+    main { margin-top: 18px; }
+    section { margin-bottom: var(--section-gap); }
+    h2 {
+      font-size: 16px;
+      margin: 0 0 10px 0;
+      letter-spacing: 0.02em;
+    }
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .skill-pill {
+      padding: 6px 10px;
+      background: #f4f7fb;
+      border: 1px solid #eef2f9;
+      border-radius: 6px;
+      font-size: 13px;
+    }
+    .experience-item {
+      margin-bottom: 14px;
+    }
+    .exp-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: baseline;
+    }
+    .company {
+      font-weight: 700;
+    }
+    .role {
+      color: var(--muted);
+      font-weight: 600;
+      margin-left: 6px;
+    }
+    .dates {
+      color: var(--muted);
+      font-size: 13px;
+      white-space: nowrap;
+    }
+    ul { margin: 8px 0 0 18px; padding: 0; }
+    li { margin-bottom: 8px; }
+    footer {
+      margin-top: 26px;
+      border-top: 1px solid #eee;
+      padding-top: 12px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* Responsive small-screen tweaks */
+    @media (max-width: 640px) {
+      header { align-items: flex-start; }
+      .contact { text-align: left; margin-top: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container" role="main">
+    <header>
+      <div>
+        <h1 class="name">Andrew Santanastaso</h1>
+        <div class="title">Software Engineer | Systems and Operations</div>
+      </div>
+      <div class="contact" aria-label="Contact information">
+        <div>Eatontown, NJ</div>
+        <div>(917) 971-4401</div>
+        <div><a href="mailto:andrewsantanastaso@gmail.com">andrewsantanastaso@gmail.com</a></div>
+        <div style="margin-top:6px;">
+          <a href="https://github.com/andrewSantanastaso" target="_blank" rel="noopener">github.com/andrewSantanastaso</a>
+          <span style="display:inline-block; width:10px;"></span>
+          <a href="https://www.linkedin.com/in/andrewsantanastaso/" target="_blank" rel="noopener">linkedin.com/in/andrewsantanastaso</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section aria-labelledby="skills-heading">
+        <h2 id="skills-heading">Technical Skills</h2>
+        <div class="skills" role="list">
+          <div class="skill-pill" role="listitem">HTML</div>
+          <div class="skill-pill" role="listitem">CSS</div>
+          <div class="skill-pill" role="listitem">Java</div>
+          <div class="skill-pill" role="listitem">JavaScript</div>
+          <div class="skill-pill" role="listitem">Python</div>
+          <div class="skill-pill" role="listitem">SQL</div>
+
+          <div class="skill-pill" role="listitem">React.js</div>
+          <div class="skill-pill" role="listitem">Node.js</div>
+          <div class="skill-pill" role="listitem">Express.js</div>
+          <div class="skill-pill" role="listitem">Django</div>
+          <div class="skill-pill" role="listitem">Mongoose</div>
+          <div class="skill-pill" role="listitem">React Bootstrap</div>
+          <div class="skill-pill" role="listitem">Tailwind</div>
+
+          <div class="skill-pill" role="listitem">MongoDB</div>
+          <div class="skill-pill" role="listitem">PostgreSQL</div>
+          <div class="skill-pill" role="listitem">Git / GitHub</div>
+          <div class="skill-pill" role="listitem">VSCode</div>
+          <div class="skill-pill" role="listitem">Figma</div>
+          <div class="skill-pill" role="listitem">Heroku</div>
+
+          <div class="skill-pill" role="listitem">RESTful APIs</div>
+          <div class="skill-pill" role="listitem">MVC</div>
+          <div class="skill-pill" role="listitem">Agile</div>
+          <div class="skill-pill" role="listitem">AWS</div>
+        </div>
+      </section>
+
+      <section aria-labelledby="experience-heading">
+        <h2 id="experience-heading">Experience</h2>
+
+        <div class="experience-item">
+          <div class="exp-header">
+            <div>
+              <span class="company">Freelance</span>
+              <span class="role">Technical Consultant</span>
+            </div>
+            <div class="dates">Mar 2025 – Present</div>
+          </div>
+          <ul>
+            <li>Analyze client workflows and identify opportunities for process improvements, resulting in more efficient operations.</li>
+            <li>Provide technical support and troubleshooting for clients, resolving issues related to software tools and integrations.</li>
+            <li>Collaborate with clients and internal teams to clarify requirements and translate business needs into actionable technical solutions.</li>
+            <li>Assist in documentation of technical processes, user guides, and best practices to support knowledge sharing.</li>
+            <li>Coordinate project tasks using Agile methodologies, ensuring timely communication and delivery of project milestones.</li>
+          </ul>
+        </div>
+
+        <div class="experience-item">
+          <div class="exp-header">
+            <div>
+              <span class="company">Fancy VFX (Remote)</span>
+              <span class="role">Technical Operations Manager &amp; Junior Software Engineer</span>
+            </div>
+            <div class="dates">Jan 2022 – Feb 2025</div>
+          </div>
+          <ul>
+            <li>Led workflow optimization and automation initiatives, increasing team efficiency by 30%.</li>
+            <li>Coordinated with studio and technical leads to identify and resolve technical issues and workflow bottlenecks.</li>
+            <li>Supported quality assurance by testing internal tools, reporting bugs, and providing feedback on CI/CD processes.</li>
+            <li>Developed technical documentation, conducted research on emerging technologies, and contributed insights to enhance internal tools.</li>
+          </ul>
+        </div>
+
+        <div class="experience-item">
+          <div class="exp-header">
+            <div>
+              <span class="company">General Assembly (Remote)</span>
+              <span class="role">Software Engineer Fellow</span>
+            </div>
+            <div class="dates">Apr 2024 – Dec 2024</div>
+          </div>
+          <ul>
+            <li>Designed, developed, and deployed four full-stack applications, managing all phases of the software development lifecycle, including prototyping, usability testing, iteration, and stakeholder presentations.</li>
+            <li>Collaborated in remote teams using Agile methodologies, fostering iterative development practices to deliver high-quality solutions.</li>
+            <li>Gained hands-on experience with modern tools, frameworks, and technologies essential to full-stack development.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section aria-labelledby="certs-heading">
+        <h2 id="certs-heading">Certifications</h2>
+        <ul>
+          <li>AWS Certified Cloud Practitioner — Nov 2025</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="edu-heading">
+        <h2 id="edu-heading">Education</h2>
+        <div>
+          <strong>The State University of New York at Albany</strong>
+          <div class="role">B.S., Biology (Albany, NY)</div>
+          <div class="dates">Aug 2011 – May 2015</div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>Links: <a href="https://github.com/andrewSantanastaso" target="_blank" rel="noopener">github.com/andrewSantanastaso</a> • <a href="https://www.linkedin.com/in/andrewsantanastaso/" target="_blank" rel="noopener">linkedin.com/in/andrewsantanastaso</a></div>
+      <div style="margin-top:8px;">
+        <a href="/mnt/data/AndrewSantanastaso_SWE_RESUME_1117.pdf" download>Download original PDF</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
